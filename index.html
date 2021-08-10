@@ -2,35 +2,35 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="veiwport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
     <title>LIFF - LINE  Front-end Framework</title>
 </head>
 <body>
-    <script src="https://static.line-scdn.net/liff/edge/Versions/2.5.0/sdk.js"></script>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
     <script>
         async function main() {
             await liff.init({ liffId:"1656296520-PM5W47yg" })
             await liff.shareTargetPicker([
                 {
-                    type: "Flex",
-                    altText: "Flex Message from Sare Targt Picker",
+                    type: "flex",
+                    altText: "Flex Message from Share Targt Picker",
                     contents: {
-  "type": "bubble",
-  "hero": {
-    "type": "image",
-    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
-    "size": "full",
-    "aspectRatio": "20:13",
-    "aspectMode": "cover",
-    "action": {
-      "type": "uri",
-      "label": "Line",
-      "uri": "https://linecorp.com/"
-    }
-  },
-  "body": {
-    "type": "box",
-    "layout": "vertical",
+                      "type": "bubble",
+                      "hero": {
+                      "type": "image",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+                      "size": "full",
+                      "aspectRatio": "20:13",
+                      "aspectMode": "cover",
+                      "action": {
+                      "type": "uri",
+                      "label": "Line",
+                      "uri": "https://linecorp.com/"
+                                }
+                              },
+                      "body": {
+                      "type": "box",
+                      "layout": "vertical",
     "contents": [
       {
         "type": "text",
