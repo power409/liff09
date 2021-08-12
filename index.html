@@ -13,8 +13,8 @@
             await liff.shareTargetPicker([
                 {
                     type: "flex",
-                    altText: "@garantee24 พ.ร.บ. ต่อภาษี ประกันภัยออนไลน์",
-                    contents:{
+                    altText: "Flex Message from Share Targt Picker",
+                    contents: {
   "type": "bubble",
   "body": {
     "type": "box",
@@ -24,47 +24,28 @@
         "type": "image",
         "url": "https://garantee24.com/wp-content/uploads/2021/08/06M-scaled.jpg",
         "size": "full",
-        "align": "center",
-        "gravity": "center",
-        "aspectMode": "fit",
-        "animated": false,
-        "offsetTop": "xs",
-        "offsetBottom": "xs",
-        "offsetStart": "xs",
-        "offsetEnd": "xs",
-        "margin": "xs"
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://g.page/garantee24"
+        }
       }
-    ]
+    ],
+    "paddingAll": "0px"
   },
   "footer": {
     "type": "box",
-    "layout": "vertical",
+    "layout": "horizontal",
     "contents": [
-      {
-        "type": "text",
-        "text": "ผ่อนเงินสด 0%  สูงสุด 6 งวด ",
-        "size": "sm",
-        "margin": "none",
-        "offsetStart": "lg"
-      },
-      {
-        "type": "text",
-        "text": "เก๋ง กระบะ ประเภท1 2+ 3+",
-        "size": "sm",
-        "margin": "none",
-        "offsetStart": "lg"
-      },
       {
         "type": "button",
         "action": {
           "type": "uri",
-          "label": "ดูข้อเสนอ ฟรี! ",
-          "uri": "https://share.724.co.th/insure/a/motor/AM00186775"
+          "label": "ข้อมูลเพิ่มเติม",
+          "uri": "https://page.line.me/garantee24"
         },
-        "style": "link",
-        "height": "sm",
-        "margin": "md",
-        "gravity": "center"
+        "style": "primary",
+        "color": "#FAB938"
       },
       {
         "type": "button",
@@ -73,12 +54,19 @@
           "label": "แชร์ให้เพื่อน",
           "uri": "https://liff.line.me/1656296520-PM5W47yg"
         },
-        "style": "primary",
-        "height": "sm"
+        "style": "primary"
       }
-    ]
+    ],
+    "height": "50px",
+    "borderWidth": "none",
+    "cornerRadius": "sm",
+    "action": {
+      "type": "message",
+      "label": "action",
+      "text": "คลิกที่ปุ่ม"
+    }
   }
-}  
+} 
                 }         
             ])
             liff.closeWindow()
